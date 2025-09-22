@@ -1,0 +1,240 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  color: #222;
+  background: #f8f9fa;
+}
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background: #0a74da;
+  color: white;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.logo-img {
+  width: 36px;
+  height: 36px;
+  margin-right: 10px;
+}
+nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 6px 12px;
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+nav a:hover {
+  background: #ffffff44;
+  color: #fff;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+  background: linear-gradient(120deg, #a1c4fd, #c2e9fb);
+  text-align: center;
+}
+.hero-image img {
+  width: 400px;
+  max-width: 90vw;
+  border-radius: 27px;
+  margin-right: 30px;
+  margin-bottom: 24px;
+  box-shadow: 0 6px 40px rgba(100,140,180,0.19);
+}
+.hero-content {
+  max-width: 580px;
+}
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+.cta-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 32px;
+  background: #0a74da;
+  color: white;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+.cta-button:hover {
+  background: #075abb;
+}
+
+/* Features */
+.features {
+  padding: 60px 20px 40px 20px;
+  background: #fff;
+}
+.features h2 {
+  text-align: center;
+  margin-bottom: 32px;
+}
+.features-list {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+.feature-card {
+  background: #eaf0fa;
+  padding: 30px 20px;
+  border-radius: 14px;
+  box-shadow: 0 2px 12px rgba(10, 116, 218, 0.07);
+  width: 240px;
+  text-align: center;
+}
+.feature-card img {
+  width: 58px;
+  height: 58px;
+  margin-bottom: 14px;
+}
+
+/* Team Section */
+.team {
+  background: #f4f4fa;
+  padding: 60px 20px 40px 20px;
+}
+.team h2 {
+  text-align: center;
+  margin-bottom: 28px;
+}
+.team-members {
+  display: flex;
+  justify-content: center;
+  gap: 28px;
+  flex-wrap: wrap;
+}
+.member-card {
+  background: #edf6ff;
+  padding: 28px 18px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(40,140,200,0.10);
+  width: 200px;
+  text-align: center;
+}
+.member-card img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 12px;
+}
+
+/* Contact Section */
+.contact {
+  padding: 60px 20px 40px 20px;
+  background: #f4f4fa;
+}
+.contact h2 {
+  text-align: center;
+  margin-bottom: 18px;
+}
+form {
+  max-width: 420px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+input, textarea {
+  padding: 12px;
+  border: 1px solid #bbb;
+  border-radius: 7px;
+  font-size: 1rem;
+  outline: none;
+  resize: none;
+}
+button[type="submit"] {
+  padding: 12px;
+  background: #0a74da;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+button[type="submit"]:hover {
+  background: #075abb;
+}
+
+/* Footer */
+footer {
+  background: #222;
+  color: #eee;
+  padding: 30px 20px 10px 20px;
+  text-align: center;
+}
+.footer-content a {
+  color: #0a74da;
+  margin: 0 10px;
+  text-decoration: none;
+}
+.footer-bottom {
+  margin-top: 10px;
+  font-size: 0.9rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 950px) {
+  .features-list,
+  .team-members {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 18px;
+  }
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .features-list {
+    gap: 18px;
+  }
+  .hero,
+  .team-members {
+    flex-direction: column;
+  }
+  .hero-image img {
+    margin-right: 0;
+    margin-bottom: 18px;
+  }
+  .hero h1 {
+    font-size: 2rem;
+  }
+  .feature-card {
+    width: 95%;
+  }
+}
